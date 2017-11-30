@@ -1,0 +1,23 @@
+@import "~antd/lib/style/themes/default.less";
+
+.container{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: orchid;
+  i{
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+  }
+}
+.popwrap{
+  :global{
+    .ant-popover-inner-content{
+      padding: 0;
+    }
+  }
+}
