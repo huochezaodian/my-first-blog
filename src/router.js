@@ -13,6 +13,10 @@ dynamic.setDefaultLoadingComponent(() => {
 function RouterConfig({ history, app }) {
   const BasicLayout = dynamic({
     app,
+    models:() => [
+      import('./models/user'),
+      import('./models/login'),
+    ],
     component: () => import('./layouts/BasicLayout'),
   });
   const UserLayout = dynamic({
